@@ -1,0 +1,39 @@
+<% include partials/header%>
+
+
+<h1>Welcome to the home page!</h1>
+
+<div class="ui main text container segment">
+    <div class="ui huge header">Enter search parameters</div>
+    <form class="ui form" action="/results" method="POST">
+        <div class="field">
+            <label>Stream</label>
+            <select name="str">
+                <option value="Stream">Stream</option>
+                <option value="CSE">CSE</option>
+                <option value="IT">IT</option>
+            </select>
+        </div>
+        <div class="field">
+            <label>Semester</label>
+            <select name="sem">
+                <option value="Semester">Semester</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="field">
+            <label>College</label>
+            <select name="clg">
+                <option value="College">College</option>
+                <option value="BVP">BVP</option>
+                <option value="MAIT">MAIT</option>
+                <option value="MAIT">MAIT</option>
+            </select>
+        </div>
+        <input class="ui blue big basic button" type="submit">
+    </form>
+</div>
+
+<% include partials/footer %>
